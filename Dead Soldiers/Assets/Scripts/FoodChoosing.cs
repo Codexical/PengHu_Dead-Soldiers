@@ -3,24 +3,23 @@ using UnityEngine;
 public class FoodChoosing : MonoBehaviour
 {
     [SerializeField] private GameObject ChooseFood;
-    [SerializeField] private ClickPuDo[] clickPuDos;
     [SerializeField] private int foodIndex;
-    private int plateIndex;
+    public StartPuDo startPuDo;
+    public PlateChoose plateChoose;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-       
+       plateChoose = ChooseFood.GetComponent<PlateChoose>();
+       startPuDo = GameObject.Find("Sence2").GetComponent<StartPuDo>();
     }
-    public void setplate(int index){
-        plateIndex=index;
-        Debug.Log("Set plate to "+plateIndex);
-    }
+    
     public void CloseWindow(){
+        startPuDo.EnableALLplate();
         ChooseFood.SetActive(false);
     }
     public void OnMouseDown(){
-        Debug.Log("Choose food "+foodIndex+" for plate "+plateIndex);
-        clickPuDos[plateIndex].SetFood(foodIndex);
+        startPuDo.EnableALLplate();
+        plateChoose.SetFood(foodIndex);
         ChooseFood.SetActive(false);
     }
     // Update is called once per frame

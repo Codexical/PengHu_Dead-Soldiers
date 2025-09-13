@@ -8,17 +8,22 @@ public class ClickPuDo : MonoBehaviour
     [SerializeField] private Sprite[] foodSprites;
     [SerializeField] private Image textImage;
     [SerializeField] private Sprite[] textSprites;
+    public StartPuDo startPuDo;
+    public BoxCollider2D boxCollider;
     public int foodIndex = 0;
     public int plateIndex = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        ChooseFood.SetActive(false);
+        ChooseFood.SetActive(false); 
+        boxCollider=GetComponent<BoxCollider2D>();
+        startPuDo = GameObject.Find("Sence2").GetComponent<StartPuDo>();
     }
 
     void OnMouseDown(){
         ChooseFood.SetActive(true);
-        ChooseFood.GetComponent<FoodChoosing>().setplate(plateIndex);
+        ChooseFood.GetComponent<PlateChoose>().setplate(plateIndex);
+        startPuDo.DisableALLplate();
     }
     public void SetFood(int index){
         if(index < 0 || index >= foodSprites.Length){
@@ -40,5 +45,11 @@ public class ClickPuDo : MonoBehaviour
     void Update()
     {
         
+    }
+    public void EnablePlate(){
+        boxCollider.enabled=true;
+    }
+    public void DisablePlate(){
+        boxCollider.enabled=false;
     }
 }

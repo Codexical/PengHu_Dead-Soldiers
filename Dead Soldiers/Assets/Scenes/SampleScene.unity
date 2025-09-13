@@ -659,7 +659,10 @@ MonoBehaviour:
   - {fileID: -8693781505769813521, guid: 8e307a638b7c73e459cbd8fd7897f1b2, type: 3}
   - {fileID: 6323350600597997048, guid: 8ac9a20817d5aaa42bfcc29756f3c97a, type: 3}
   - {fileID: 3211842591975613382, guid: 42e80e8b9bdbea848804c115ebb00e69, type: 3}
+  startPuDo: {fileID: 0}
+  boxCollider: {fileID: 0}
   foodIndex: -1
+  plateIndex: 4
 --- !u!61 &23020348
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -915,8 +918,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ChooseFood: {fileID: 1595614232}
-  clickPuDo: {fileID: 2002381192}
   foodIndex: 10
+  startPuDo: {fileID: 0}
+  plateChoose: {fileID: 0}
 --- !u!1 &131749948
 GameObject:
   m_ObjectHideFlags: 0
@@ -1013,8 +1017,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ChooseFood: {fileID: 1595614232}
-  clickPuDo: {fileID: 2002381192}
   foodIndex: 1
+  startPuDo: {fileID: 0}
+  plateChoose: {fileID: 0}
 --- !u!1 &142690816
 GameObject:
   m_ObjectHideFlags: 0
@@ -1411,8 +1416,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ChooseFood: {fileID: 1595614232}
-  clickPuDo: {fileID: 2002381192}
   foodIndex: 23
+  startPuDo: {fileID: 0}
+  plateChoose: {fileID: 0}
 --- !u!1 &261528285
 GameObject:
   m_ObjectHideFlags: 0
@@ -1620,6 +1626,56 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 277451004}
   m_CullTransparentMesh: 1
+--- !u!1 &282327895
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 282327896}
+  - component: {fileID: 282327897}
+  m_Layer: 0
+  m_Name: Timer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &282327896
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 282327895}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1549988661}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &282327897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 282327895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0297c48de80e6e449bdb8c7e246e76f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _parentComponent: {fileID: 1549988663}
+  _timeLimit: 30
 --- !u!1 &284623574
 GameObject:
   m_ObjectHideFlags: 0
@@ -1845,6 +1901,56 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 312826932}
   m_CullTransparentMesh: 1
+--- !u!1 &326205640
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 326205641}
+  - component: {fileID: 326205642}
+  m_Layer: 0
+  m_Name: Timer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &326205641
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 326205640}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1525799717}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &326205642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 326205640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0297c48de80e6e449bdb8c7e246e76f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _parentComponent: {fileID: 1525799716}
+  _timeLimit: 30
 --- !u!1 &345969784
 GameObject:
   m_ObjectHideFlags: 0
@@ -2020,8 +2126,59 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ChooseFood: {fileID: 1595614232}
-  clickPuDo: {fileID: 2002381192}
   foodIndex: 4
+  startPuDo: {fileID: 0}
+  plateChoose: {fileID: 0}
+--- !u!1 &385061427
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 385061428}
+  - component: {fileID: 385061429}
+  m_Layer: 0
+  m_Name: Timer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &385061428
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 385061427}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 582931559}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &385061429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 385061427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0297c48de80e6e449bdb8c7e246e76f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _parentComponent: {fileID: 582931560}
+  _timeLimit: 30
 --- !u!1 &439980812
 GameObject:
   m_ObjectHideFlags: 0
@@ -2118,8 +2275,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ChooseFood: {fileID: 1595614232}
-  clickPuDo: {fileID: 2002381192}
   foodIndex: 20
+  startPuDo: {fileID: 0}
+  plateChoose: {fileID: 0}
 --- !u!1 &519148488
 GameObject:
   m_ObjectHideFlags: 0
@@ -2439,6 +2597,7 @@ RectTransform:
   - {fileID: 2063222084}
   - {fileID: 758343228}
   - {fileID: 1248530871}
+  - {fileID: 385061428}
   m_Father: {fileID: 758669150}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2459,6 +2618,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 1156298665}
+  timer: {fileID: 385061429}
 --- !u!1 &609278446
 GameObject:
   m_ObjectHideFlags: 0
@@ -2801,7 +2961,10 @@ MonoBehaviour:
   - {fileID: -8693781505769813521, guid: 8e307a638b7c73e459cbd8fd7897f1b2, type: 3}
   - {fileID: 6323350600597997048, guid: 8ac9a20817d5aaa42bfcc29756f3c97a, type: 3}
   - {fileID: 3211842591975613382, guid: 42e80e8b9bdbea848804c115ebb00e69, type: 3}
+  startPuDo: {fileID: 0}
+  boxCollider: {fileID: 0}
   foodIndex: -1
+  plateIndex: 12
 --- !u!61 &736703125
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3069,7 +3232,10 @@ MonoBehaviour:
   - {fileID: -8693781505769813521, guid: 8e307a638b7c73e459cbd8fd7897f1b2, type: 3}
   - {fileID: 6323350600597997048, guid: 8ac9a20817d5aaa42bfcc29756f3c97a, type: 3}
   - {fileID: 3211842591975613382, guid: 42e80e8b9bdbea848804c115ebb00e69, type: 3}
+  startPuDo: {fileID: 0}
+  boxCollider: {fileID: 0}
   foodIndex: -1
+  plateIndex: 5
 --- !u!61 &754419658
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3605,7 +3771,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1595614237}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: FoodChoosing, Assembly-CSharp
         m_MethodName: CloseWindow
         m_Mode: 1
@@ -3751,8 +3917,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ChooseFood: {fileID: 1595614232}
-  clickPuDo: {fileID: 2002381192}
   foodIndex: 24
+  startPuDo: {fileID: 0}
+  plateChoose: {fileID: 0}
 --- !u!1 &833532626
 GameObject:
   m_ObjectHideFlags: 0
@@ -4011,7 +4178,10 @@ MonoBehaviour:
   - {fileID: -8693781505769813521, guid: 8e307a638b7c73e459cbd8fd7897f1b2, type: 3}
   - {fileID: 6323350600597997048, guid: 8ac9a20817d5aaa42bfcc29756f3c97a, type: 3}
   - {fileID: 3211842591975613382, guid: 42e80e8b9bdbea848804c115ebb00e69, type: 3}
+  startPuDo: {fileID: 0}
+  boxCollider: {fileID: 0}
   foodIndex: -1
+  plateIndex: 10
 --- !u!61 &878176793
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4282,8 +4452,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ChooseFood: {fileID: 1595614232}
-  clickPuDo: {fileID: 2002381192}
   foodIndex: 19
+  startPuDo: {fileID: 0}
+  plateChoose: {fileID: 0}
 --- !u!1 &918998069
 GameObject:
   m_ObjectHideFlags: 0
@@ -4380,8 +4551,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ChooseFood: {fileID: 1595614232}
-  clickPuDo: {fileID: 2002381192}
   foodIndex: 18
+  startPuDo: {fileID: 0}
+  plateChoose: {fileID: 0}
 --- !u!1 &923638201
 GameObject:
   m_ObjectHideFlags: 0
@@ -4478,8 +4650,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ChooseFood: {fileID: 1595614232}
-  clickPuDo: {fileID: 2002381192}
   foodIndex: 21
+  startPuDo: {fileID: 0}
+  plateChoose: {fileID: 0}
 --- !u!1 &962744148
 GameObject:
   m_ObjectHideFlags: 0
@@ -4588,7 +4761,10 @@ MonoBehaviour:
   - {fileID: -8693781505769813521, guid: 8e307a638b7c73e459cbd8fd7897f1b2, type: 3}
   - {fileID: 6323350600597997048, guid: 8ac9a20817d5aaa42bfcc29756f3c97a, type: 3}
   - {fileID: 3211842591975613382, guid: 42e80e8b9bdbea848804c115ebb00e69, type: 3}
+  startPuDo: {fileID: 0}
+  boxCollider: {fileID: 0}
   foodIndex: -1
+  plateIndex: 2
 --- !u!61 &962744151
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4781,7 +4957,10 @@ MonoBehaviour:
   - {fileID: -8693781505769813521, guid: 8e307a638b7c73e459cbd8fd7897f1b2, type: 3}
   - {fileID: 6323350600597997048, guid: 8ac9a20817d5aaa42bfcc29756f3c97a, type: 3}
   - {fileID: 3211842591975613382, guid: 42e80e8b9bdbea848804c115ebb00e69, type: 3}
+  startPuDo: {fileID: 0}
+  boxCollider: {fileID: 0}
   foodIndex: -1
+  plateIndex: 9
 --- !u!61 &975370461
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5037,8 +5216,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ChooseFood: {fileID: 1595614232}
-  clickPuDo: {fileID: 2002381192}
   foodIndex: 12
+  startPuDo: {fileID: 0}
+  plateChoose: {fileID: 0}
 --- !u!1 &992613441
 GameObject:
   m_ObjectHideFlags: 0
@@ -5135,8 +5315,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ChooseFood: {fileID: 1595614232}
-  clickPuDo: {fileID: 2002381192}
   foodIndex: 16
+  startPuDo: {fileID: 0}
+  plateChoose: {fileID: 0}
 --- !u!1 &1002021041
 GameObject:
   m_ObjectHideFlags: 0
@@ -5503,7 +5684,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 628, y: -402}
+  m_AnchoredPosition: {x: 598, y: -402}
   m_SizeDelta: {x: 582, y: 215}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1197950655
@@ -5943,8 +6124,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ChooseFood: {fileID: 1595614232}
-  clickPuDo: {fileID: 2002381192}
   foodIndex: 3
+  startPuDo: {fileID: 0}
+  plateChoose: {fileID: 0}
 --- !u!1 &1317066869
 GameObject:
   m_ObjectHideFlags: 0
@@ -6116,8 +6298,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ChooseFood: {fileID: 1595614232}
-  clickPuDo: {fileID: 2002381192}
   foodIndex: 9
+  startPuDo: {fileID: 0}
+  plateChoose: {fileID: 0}
 --- !u!1 &1335445962
 GameObject:
   m_ObjectHideFlags: 0
@@ -6214,8 +6397,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ChooseFood: {fileID: 1595614232}
-  clickPuDo: {fileID: 2002381192}
   foodIndex: 2
+  startPuDo: {fileID: 0}
+  plateChoose: {fileID: 0}
 --- !u!1 &1348282279
 GameObject:
   m_ObjectHideFlags: 0
@@ -6444,8 +6628,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ChooseFood: {fileID: 1595614232}
-  clickPuDo: {fileID: 2002381192}
   foodIndex: 13
+  startPuDo: {fileID: 0}
+  plateChoose: {fileID: 0}
 --- !u!1 &1366587547
 GameObject:
   m_ObjectHideFlags: 0
@@ -6554,7 +6739,10 @@ MonoBehaviour:
   - {fileID: -8693781505769813521, guid: 8e307a638b7c73e459cbd8fd7897f1b2, type: 3}
   - {fileID: 6323350600597997048, guid: 8ac9a20817d5aaa42bfcc29756f3c97a, type: 3}
   - {fileID: 3211842591975613382, guid: 42e80e8b9bdbea848804c115ebb00e69, type: 3}
+  startPuDo: {fileID: 0}
+  boxCollider: {fileID: 0}
   foodIndex: -1
+  plateIndex: 7
 --- !u!61 &1366587550
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6741,7 +6929,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1394480449}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6822,7 +7010,10 @@ MonoBehaviour:
   - {fileID: -8693781505769813521, guid: 8e307a638b7c73e459cbd8fd7897f1b2, type: 3}
   - {fileID: 6323350600597997048, guid: 8ac9a20817d5aaa42bfcc29756f3c97a, type: 3}
   - {fileID: 3211842591975613382, guid: 42e80e8b9bdbea848804c115ebb00e69, type: 3}
+  startPuDo: {fileID: 0}
+  boxCollider: {fileID: 0}
   foodIndex: -1
+  plateIndex: 8
 --- !u!61 &1394480452
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7078,8 +7269,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ChooseFood: {fileID: 1595614232}
-  clickPuDo: {fileID: 2002381192}
   foodIndex: 15
+  startPuDo: {fileID: 0}
+  plateChoose: {fileID: 0}
 --- !u!1 &1450276995
 GameObject:
   m_ObjectHideFlags: 0
@@ -7176,8 +7368,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ChooseFood: {fileID: 1595614232}
-  clickPuDo: {fileID: 2002381192}
   foodIndex: 7
+  startPuDo: {fileID: 0}
+  plateChoose: {fileID: 0}
 --- !u!1 &1450279991
 GameObject:
   m_ObjectHideFlags: 0
@@ -7274,8 +7467,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ChooseFood: {fileID: 1595614232}
-  clickPuDo: {fileID: 2002381192}
   foodIndex: 14
+  startPuDo: {fileID: 0}
+  plateChoose: {fileID: 0}
 --- !u!1 &1452458759
 GameObject:
   m_ObjectHideFlags: 0
@@ -7384,7 +7578,10 @@ MonoBehaviour:
   - {fileID: -8693781505769813521, guid: 8e307a638b7c73e459cbd8fd7897f1b2, type: 3}
   - {fileID: 6323350600597997048, guid: 8ac9a20817d5aaa42bfcc29756f3c97a, type: 3}
   - {fileID: 3211842591975613382, guid: 42e80e8b9bdbea848804c115ebb00e69, type: 3}
+  startPuDo: {fileID: 0}
+  boxCollider: {fileID: 0}
   foodIndex: -1
+  plateIndex: 6
 --- !u!61 &1452458762
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7494,7 +7691,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1511653466}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -7652,7 +7849,10 @@ MonoBehaviour:
   - {fileID: -8693781505769813521, guid: 8e307a638b7c73e459cbd8fd7897f1b2, type: 3}
   - {fileID: 6323350600597997048, guid: 8ac9a20817d5aaa42bfcc29756f3c97a, type: 3}
   - {fileID: 3211842591975613382, guid: 42e80e8b9bdbea848804c115ebb00e69, type: 3}
+  startPuDo: {fileID: 0}
+  boxCollider: {fileID: 0}
   foodIndex: -1
+  plateIndex: 3
 --- !u!61 &1512996200
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7767,6 +7967,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 1156298665}
+  timer: {fileID: 326205642}
 --- !u!224 &1525799717
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7782,6 +7983,7 @@ RectTransform:
   - {fileID: 172378161}
   - {fileID: 1022554924}
   - {fileID: 772190717}
+  - {fileID: 326205641}
   m_Father: {fileID: 758669150}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -7820,6 +8022,7 @@ RectTransform:
   m_Children:
   - {fileID: 1511653467}
   - {fileID: 2002381188}
+  - {fileID: 1617559150}
   - {fileID: 962744149}
   - {fileID: 1512996198}
   - {fileID: 23020346}
@@ -7834,9 +8037,9 @@ RectTransform:
   - {fileID: 1770901227}
   - {fileID: 1970507673}
   - {fileID: 2093957293}
-  - {fileID: 1617559150}
   - {fileID: 1197950654}
   - {fileID: 1595614233}
+  - {fileID: 282327896}
   m_Father: {fileID: 758669150}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -7856,8 +8059,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4380125133b7e0740875ce10db39e89d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clickPuDos: []
+  clickPuDos:
+  - {fileID: 2002381192}
+  - {fileID: 1617559151}
+  - {fileID: 962744150}
+  - {fileID: 1512996199}
+  - {fileID: 23020347}
+  - {fileID: 754419657}
+  - {fileID: 1452458761}
+  - {fileID: 1366587549}
+  - {fileID: 1394480451}
+  - {fileID: 975370460}
+  - {fileID: 878176792}
+  - {fileID: 1919468461}
+  - {fileID: 736703124}
+  - {fileID: 1770901228}
+  - {fileID: 1970507674}
+  - {fileID: 2093957294}
   gameManager: {fileID: 1156298665}
+  timer: {fileID: 282327897}
 --- !u!1 &1582266159
 GameObject:
   m_ObjectHideFlags: 0
@@ -7954,8 +8174,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ChooseFood: {fileID: 1595614232}
-  clickPuDo: {fileID: 2002381192}
   foodIndex: 11
+  startPuDo: {fileID: 0}
+  plateChoose: {fileID: 0}
 --- !u!1 &1595614232
 GameObject:
   m_ObjectHideFlags: 0
@@ -8017,7 +8238,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -15.999999}
   m_SizeDelta: {x: 1814, y: 987}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!61 &1595614234
@@ -8113,12 +8334,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 1595614232}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8213861e37755642aac10ffdcf2f5db, type: 3}
+  m_Script: {fileID: 11500000, guid: 3d28ce4a01ce07d499610bfb75542432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChooseFood: {fileID: 1595614232}
-  clickPuDo: {fileID: 0}
-  foodIndex: 0
+  clickPuDos:
+  - {fileID: 2002381192}
+  - {fileID: 1617559151}
+  - {fileID: 962744150}
+  - {fileID: 1512996199}
+  - {fileID: 23020347}
+  - {fileID: 754419657}
+  - {fileID: 1452458761}
+  - {fileID: 1366587549}
+  - {fileID: 1394480451}
+  - {fileID: 975370460}
+  - {fileID: 878176792}
+  - {fileID: 1919468461}
+  - {fileID: 736703124}
+  - {fileID: 1770901228}
+  - {fileID: 1970507674}
+  - {fileID: 2093957294}
+  timer: {fileID: 282327897}
 --- !u!1 &1617559149
 GameObject:
   m_ObjectHideFlags: 0
@@ -8227,7 +8463,10 @@ MonoBehaviour:
   - {fileID: -8693781505769813521, guid: 8e307a638b7c73e459cbd8fd7897f1b2, type: 3}
   - {fileID: 6323350600597997048, guid: 8ac9a20817d5aaa42bfcc29756f3c97a, type: 3}
   - {fileID: 3211842591975613382, guid: 42e80e8b9bdbea848804c115ebb00e69, type: 3}
+  startPuDo: {fileID: 0}
+  boxCollider: {fileID: 0}
   foodIndex: -1
+  plateIndex: 1
 --- !u!61 &1617559152
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8420,7 +8659,10 @@ MonoBehaviour:
   - {fileID: -8693781505769813521, guid: 8e307a638b7c73e459cbd8fd7897f1b2, type: 3}
   - {fileID: 6323350600597997048, guid: 8ac9a20817d5aaa42bfcc29756f3c97a, type: 3}
   - {fileID: 3211842591975613382, guid: 42e80e8b9bdbea848804c115ebb00e69, type: 3}
+  startPuDo: {fileID: 0}
+  boxCollider: {fileID: 0}
   foodIndex: -1
+  plateIndex: 13
 --- !u!61 &1770901229
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8676,8 +8918,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ChooseFood: {fileID: 1595614232}
-  clickPuDo: {fileID: 2002381192}
   foodIndex: 17
+  startPuDo: {fileID: 0}
+  plateChoose: {fileID: 0}
 --- !u!1 &1891321590
 GameObject:
   m_ObjectHideFlags: 0
@@ -8849,8 +9092,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ChooseFood: {fileID: 1595614232}
-  clickPuDo: {fileID: 2002381192}
   foodIndex: 5
+  startPuDo: {fileID: 0}
+  plateChoose: {fileID: 0}
 --- !u!1 &1918513712
 GameObject:
   m_ObjectHideFlags: 0
@@ -9034,7 +9278,10 @@ MonoBehaviour:
   - {fileID: -8693781505769813521, guid: 8e307a638b7c73e459cbd8fd7897f1b2, type: 3}
   - {fileID: 6323350600597997048, guid: 8ac9a20817d5aaa42bfcc29756f3c97a, type: 3}
   - {fileID: 3211842591975613382, guid: 42e80e8b9bdbea848804c115ebb00e69, type: 3}
+  startPuDo: {fileID: 0}
+  boxCollider: {fileID: 0}
   foodIndex: -1
+  plateIndex: 11
 --- !u!61 &1919468462
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9290,8 +9537,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ChooseFood: {fileID: 1595614232}
-  clickPuDo: {fileID: 2002381192}
   foodIndex: 8
+  startPuDo: {fileID: 0}
+  plateChoose: {fileID: 0}
 --- !u!1 &1941928890
 GameObject:
   m_ObjectHideFlags: 0
@@ -9475,7 +9723,10 @@ MonoBehaviour:
   - {fileID: -8693781505769813521, guid: 8e307a638b7c73e459cbd8fd7897f1b2, type: 3}
   - {fileID: 6323350600597997048, guid: 8ac9a20817d5aaa42bfcc29756f3c97a, type: 3}
   - {fileID: 3211842591975613382, guid: 42e80e8b9bdbea848804c115ebb00e69, type: 3}
+  startPuDo: {fileID: 0}
+  boxCollider: {fileID: 0}
   foodIndex: -1
+  plateIndex: 14
 --- !u!61 &1970507675
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9656,8 +9907,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ChooseFood: {fileID: 1595614232}
-  clickPuDo: {fileID: 2002381192}
   foodIndex: 22
+  startPuDo: {fileID: 0}
+  plateChoose: {fileID: 0}
 --- !u!1 &2002381187
 GameObject:
   m_ObjectHideFlags: 0
@@ -9850,7 +10102,10 @@ MonoBehaviour:
   - {fileID: -8693781505769813521, guid: 8e307a638b7c73e459cbd8fd7897f1b2, type: 3}
   - {fileID: 6323350600597997048, guid: 8ac9a20817d5aaa42bfcc29756f3c97a, type: 3}
   - {fileID: 3211842591975613382, guid: 42e80e8b9bdbea848804c115ebb00e69, type: 3}
+  startPuDo: {fileID: 0}
+  boxCollider: {fileID: 0}
   foodIndex: -1
+  plateIndex: 0
 --- !u!1 &2057291976
 GameObject:
   m_ObjectHideFlags: 0
@@ -9947,8 +10202,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ChooseFood: {fileID: 1595614232}
-  clickPuDo: {fileID: 2002381192}
   foodIndex: 6
+  startPuDo: {fileID: 0}
+  plateChoose: {fileID: 0}
 --- !u!1 &2063222083
 GameObject:
   m_ObjectHideFlags: 0
@@ -10207,7 +10463,10 @@ MonoBehaviour:
   - {fileID: -8693781505769813521, guid: 8e307a638b7c73e459cbd8fd7897f1b2, type: 3}
   - {fileID: 6323350600597997048, guid: 8ac9a20817d5aaa42bfcc29756f3c97a, type: 3}
   - {fileID: 3211842591975613382, guid: 42e80e8b9bdbea848804c115ebb00e69, type: 3}
+  startPuDo: {fileID: 0}
+  boxCollider: {fileID: 0}
   foodIndex: -1
+  plateIndex: 15
 --- !u!61 &2093957295
 BoxCollider2D:
   m_ObjectHideFlags: 0
