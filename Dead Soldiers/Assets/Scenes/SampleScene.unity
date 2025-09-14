@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 1810710}
   - component: {fileID: 1810709}
   - component: {fileID: 1810708}
+  - component: {fileID: 1810711}
   m_Layer: 0
   m_Name: Watch_Video_Button
   m_TagString: Untagged
@@ -251,6 +252,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1810706}
   m_CullTransparentMesh: 1
+--- !u!95 &1810711
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1810706}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e19d1cabcffe5e1498ee0f5ea113c394, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &4195989
 GameObject:
   m_ObjectHideFlags: 0
@@ -3332,6 +3355,7 @@ GameObject:
   - component: {fileID: 758343231}
   - component: {fileID: 758343230}
   - component: {fileID: 758343229}
+  - component: {fileID: 758343232}
   m_Layer: 0
   m_Name: BackHome_Button
   m_TagString: Untagged
@@ -3452,6 +3476,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 758343227}
   m_CullTransparentMesh: 1
+--- !u!95 &758343232
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758343227}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4c7be66063521d946a619c4cb5ff2f2e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &758669146
 GameObject:
   m_ObjectHideFlags: 0
@@ -3566,6 +3612,7 @@ GameObject:
   - component: {fileID: 772190720}
   - component: {fileID: 772190719}
   - component: {fileID: 772190718}
+  - component: {fileID: 772190721}
   m_Layer: 0
   m_Name: Again_Button
   m_TagString: Untagged
@@ -3686,6 +3733,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 772190716}
   m_CullTransparentMesh: 1
+--- !u!95 &772190721
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 772190716}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4c7be66063521d946a619c4cb5ff2f2e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &790752489
 GameObject:
   m_ObjectHideFlags: 0
@@ -5402,6 +5471,7 @@ GameObject:
   - component: {fileID: 1022554927}
   - component: {fileID: 1022554926}
   - component: {fileID: 1022554925}
+  - component: {fileID: 1022554928}
   m_Layer: 0
   m_Name: BackHome_Button
   m_TagString: Untagged
@@ -5522,6 +5592,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1022554923}
   m_CullTransparentMesh: 1
+--- !u!95 &1022554928
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1022554923}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4c7be66063521d946a619c4cb5ff2f2e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1072717945
 GameObject:
   m_ObjectHideFlags: 0
@@ -5658,6 +5750,7 @@ GameObject:
   - component: {fileID: 1197950657}
   - component: {fileID: 1197950656}
   - component: {fileID: 1197950655}
+  - component: {fileID: 1197950658}
   m_Layer: 0
   m_Name: StartPuDo_button
   m_TagString: Untagged
@@ -5778,6 +5871,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1197950653}
   m_CullTransparentMesh: 1
+--- !u!95 &1197950658
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1197950653}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4c7be66063521d946a619c4cb5ff2f2e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1208017422
 GameObject:
   m_ObjectHideFlags: 0
@@ -5905,6 +6020,7 @@ GameObject:
   - component: {fileID: 1248530874}
   - component: {fileID: 1248530873}
   - component: {fileID: 1248530872}
+  - component: {fileID: 1248530875}
   m_Layer: 0
   m_Name: Again_Button
   m_TagString: Untagged
@@ -6025,6 +6141,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1248530870}
   m_CullTransparentMesh: 1
+--- !u!95 &1248530875
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1248530870}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4c7be66063521d946a619c4cb5ff2f2e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1262752226
 GameObject:
   m_ObjectHideFlags: 0
@@ -6409,6 +6547,7 @@ GameObject:
   - component: {fileID: 1348282283}
   - component: {fileID: 1348282282}
   - component: {fileID: 1348282281}
+  - component: {fileID: 1348282284}
   m_Layer: 0
   m_Name: Start_Button
   m_TagString: Untagged
@@ -6454,7 +6593,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 3
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -6529,6 +6668,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1348282279}
   m_CullTransparentMesh: 1
+--- !u!95 &1348282284
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348282279}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 076c7004c27728d45b204e3e0cede509, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1366517919
 GameObject:
   m_ObjectHideFlags: 0
@@ -7950,7 +8111,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1525799716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8004,7 +8165,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1549988661
 RectTransform:
   m_ObjectHideFlags: 0
