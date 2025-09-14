@@ -39,9 +39,12 @@ public class ClickPuDo : MonoBehaviour
     void OnEnable(){
         foodImage.color = new Color(1,1,1,0);
         foodIndex = 0;
+        textImage.sprite = textSprites[0];
+        textImage.SetNativeSize();
     }
 
     // Update is called once per frame
+    
     void Update()
     {
         

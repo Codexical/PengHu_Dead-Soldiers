@@ -10,6 +10,10 @@ public class StartPuDo : MonoBehaviour, TimerController
     {
         timer.Show();
     }
+    void Start()
+    {
+        
+    }
     /*
     A類：生魚、哇沙米、紅酒、吐司麵包、餅乾、香菸＋打火機、牛肉
     B類：蘋果、香蕉、神豬、泡麵、雞蛋、醬油、米酒、汽水、啤酒、麵羊、草鞋、瓜子、金紙、糖果、醋、味素、白糖
