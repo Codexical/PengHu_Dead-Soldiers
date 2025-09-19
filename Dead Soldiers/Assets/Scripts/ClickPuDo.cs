@@ -16,7 +16,7 @@ public class ClickPuDo : MonoBehaviour
     void Start()
     {
         ChooseFood.SetActive(false); 
-        boxCollider=GetComponent<BoxCollider2D>();
+        boxCollider =GetComponent<BoxCollider2D>();
         startPuDo = GameObject.Find("Sence2").GetComponent<StartPuDo>();
     }
 
@@ -49,10 +49,12 @@ public class ClickPuDo : MonoBehaviour
     {
         
     }
-    public void EnablePlate(){
-        boxCollider.enabled=true;
+    public void EnablePlate()
+    {
+        boxCollider.enabled = true;
     }
-    public void DisablePlate(){
-        boxCollider.enabled=false;
+    public void DisablePlate()
+    {
+        boxCollider.enabled = false;
     }
 }

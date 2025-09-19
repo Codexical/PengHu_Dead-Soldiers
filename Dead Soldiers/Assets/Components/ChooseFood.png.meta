@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e0384086931c5fa4eb98e80f06b7cafb
+guid: 88de6bfae6db3ab41bc678828745c706
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2024952433784200547
-    second: ChooseFood_0
+      213: 1949790792500783113
+    second: "\u8CC7\u7522 5_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ChooseFood_0
+      name: "\u8CC7\u7522 5_0"
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d92ea397d7ce5e3e0800000000000000
-      internalID: -2024952433784200547
+      spriteID: 9082655356c0f0b10800000000000000
+      internalID: 1949790792500783113
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ChooseFood_0: -2024952433784200547
+      "\u8CC7\u7522 5_0": 1949790792500783113
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

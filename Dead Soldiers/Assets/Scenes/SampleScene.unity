@@ -4377,7 +4377,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 887642089}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 02b08d926a6cdf64abc77822c8f4ca32, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 0614ddaebe2abb143825e342e3cd7740, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 519420031}
@@ -8124,7 +8124,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1525799716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8178,7 +8178,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1549988661
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8249,6 +8249,7 @@ MonoBehaviour:
   - {fileID: 2093957294}
   gameManager: {fileID: 1156298665}
   timer: {fileID: 282327897}
+  startPuDoButton: {fileID: 1197950655}
 --- !u!1 &1582266159
 GameObject:
   m_ObjectHideFlags: 0
@@ -8367,7 +8368,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1595614233
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8478,7 +8479,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2024952433784200547, guid: e0384086931c5fa4eb98e80f06b7cafb, type: 3}
+  m_Sprite: {fileID: 1949790792500783113, guid: 88de6bfae6db3ab41bc678828745c706, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
